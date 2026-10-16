@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    float level,threshold=80,danger=100;
+    printf("Enter Water level:");
+    scanf("%f",&level);
+    if(level<=threshold)
+    {
+        printf("Water Level:Normal");
+    }
+    else if(level>threshold &&level<=danger)
+    {
+        printf("Water Level:Warning");
+    }
+    else
+    {
+        printf("Water Level:Danger Flood Risk");
+    }
+}
