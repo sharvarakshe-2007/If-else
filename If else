@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    float bp,threshold=90,danger=130;
+    printf("Enter Blood Pressure:");
+    scanf("%f",&bp);
+    if(bp<=threshold)
+    {
+        printf("Blood Pressure:Low");
+    }
+    else if(bp>threshold &&bp<danger)
+    {
+        printf("Blood Pressure:Normal");
+    }
+    else
+    {
+        printf("Blood Pressure:High");
+    }
+}
